@@ -7,7 +7,13 @@ Compliments Results
 {% block content %}
 
 <!-- Your HTML code goes here! -->
-
+<p>Hello {{user_name}} you are!:
+    <ul>
+        {% for compliment in compliments %}
+        <li>{{compliment}}</li>
+        {% endfor %}
+    </ul>
+</p>
 
 
 {% endblock %}
